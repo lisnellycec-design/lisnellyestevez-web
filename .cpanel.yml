@@ -1,5 +1,4 @@
 ﻿---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/gjejsskotd/lisnellyestevez.com/
-    - /bin/cp -R index.html assets css js $DEPLOYPATH
+    - /bin/cp -R index.html assets css js /home/gjejsskotd/lisnellyestevez.com/
