@@ -1,4 +1,5 @@
 ﻿---
 deployment:
   tasks:
-    - echo 'Deployed OK'
+    - export DEPLOYPATH=/home/gjejsskotd/lisnellyestevez.com/
+    - /bin/cp -R index.html assets css js $DEPLOYPATH
