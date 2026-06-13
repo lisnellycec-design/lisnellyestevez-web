@@ -497,12 +497,10 @@ h3 { font-size: 1.3rem; }
 }
 
 .service-card--featured {
-  background: var(--green-dark);
-  color: var(--white);
-  border-color: var(--green-dark);
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--green-primary);
 }
-.service-card--featured h3 { color: var(--white); }
-.service-card--featured p { color: rgba(255,255,255,0.75); }
 
 .service-card__icon {
   width: 56px;
@@ -516,8 +514,8 @@ h3 { font-size: 1.3rem; }
 }
 
 .service-card--featured .service-card__icon {
-  background: rgba(255,255,255,0.15);
-  color: var(--white);
+  background: var(--green-xlight);
+  color: var(--green-dark);
 }
 
 .service-card__tag {
@@ -566,10 +564,10 @@ h3 { font-size: 1.3rem; }
 }
 
 .service-card--featured .service-card__list li {
-  color: rgba(255,255,255,0.75);
+  color: var(--gray);
 }
 .service-card--featured .service-card__list li::before {
-  color: var(--accent-yellow);
+  color: var(--green-primary);
 }
 
 .service-card .btn--outline {
@@ -578,12 +576,13 @@ h3 { font-size: 1.3rem; }
   align-self: flex-start;
 }
 .service-card--featured .btn--primary {
-  background: var(--accent-gold);
-  color: var(--black);
-  border-color: var(--accent-gold);
+  background: var(--green-dark);
+  color: var(--white);
+  border-color: var(--green-dark);
 }
 .service-card--featured .btn--primary:hover {
-  background: #e6a519;
+  background: var(--green-mid);
+  border-color: var(--green-mid);
 }
 
 /* ===========================
