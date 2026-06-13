@@ -1,5 +1,4 @@
----
+﻿---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/gjejsskotd/lisnellyestevez.com/
-    - /bin/cp -R * $DEPLOYPATH
+    - echo 'Deployed OK'
