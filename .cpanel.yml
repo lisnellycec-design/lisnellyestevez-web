@@ -1,4 +1,0 @@
-﻿---
-deployment:
-  tasks:
-    - /bin/cp -R index.html assets css js /home/gjejsskotd/lisnellyestevez.com/
