@@ -1,11 +1,405 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lisnelly Estevez</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dra. Lisnelly Estévez — Nutrióloga Clínica en República Dominicana. Planes personalizados, sin dietas restrictivas, con resultados sostenibles." />
+  <title>Dra. Lisnelly Estévez | Nutrióloga Clínica</title>
+  <link rel="icon" type="image/png" href="assets/img/logo-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <h1>Hola mundo</h1>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__logo">
+        <img src="assets/img/logo-horizontal.png" alt="Dra. Lisnelly Estévez" />
+      </a>
+      <nav class="navbar__links" id="nav-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="https://wa.me/18091234567?text=Hola%20Dra.%20Lisnelly%2C%20quiero%20agendar%20una%20consulta" target="_blank" class="btn btn--primary navbar__cta">Agendar consulta</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="badge">Nutrióloga Clínica · República Dominicana</span>
+        <h1>¿Ya intentaste todo<br><em>y sigues igual?</em></h1>
+        <p class="hero__sub">Tu cuerpo no está roto. Lo que necesitas no es otra dieta — es un enfoque médico que se adapte a <strong>tu vida real.</strong></p>
+        <div class="hero__ctas">
+          <a href="https://wa.me/18091234567?text=Hola%20Dra.%20Lisnelly%2C%20quiero%20agendar%20una%20consulta" target="_blank" class="btn btn--primary btn--lg">Quiero mi consulta</a>
+          <a href="#servicios" class="btn btn--outline btn--lg">Conoce el Reto</a>
+        </div>
+        <div class="hero__trust">
+          <div class="trust-item"><strong>100%</strong><span>Personalizado</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><strong>Sin</strong><span>dietas restrictivas</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><strong>Online</strong><span>y presencial</span></div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-blob"></div>
+        <img src="assets/img/lisnelly-hero.png" alt="Dra. Lisnelly Estévez, Nutrióloga Clínica" />
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Descubre más</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== DOLOR (IDENTIFICACIÓN) ===== -->
+  <section class="pain">
+    <div class="container">
+      <p class="pain__intro">Si alguna vez te dijiste a ti misma…</p>
+      <div class="pain__quotes">
+        <div class="pain__quote">"Empiezo motivada y lo abandono todo"</div>
+        <div class="pain__quote">"No sé qué comer, hay tanta información"</div>
+        <div class="pain__quote">"Siento que hago todo bien y no bajo"</div>
+        <div class="pain__quote">"Tengo miedo de desarrollar una enfermedad"</div>
+      </div>
+      <p class="pain__close">…estás en el lugar correcto.</p>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section class="about" id="sobre-mi">
+    <div class="container about__inner">
+      <div class="about__image-wrap">
+        <img src="assets/img/lisnelly-hero.png" alt="Dra. Lisnelly Estévez" class="about__photo" />
+        <div class="about__badge-card">
+          <span class="about__badge-icon">🩺</span>
+          <div>
+            <strong>Doctora en Nutrición</strong>
+            <span>Nutrióloga Clínica certificada</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__content">
+        <span class="section-label">Sobre mí</span>
+        <h2>Un enfoque médico que te acompaña, no que te juzga</h2>
+        <p>Soy la <strong>Dra. Lisnelly Estévez</strong>, Nutrióloga Clínica con formación en el manejo integral de la composición corporal y la salud metabólica. Trabajo con mujeres profesionales que han intentado múltiples dietas sin resultados sostenibles, y que merecen una solución real.</p>
+        <p>Mi enfoque no es darte una lista de lo que no puedes comer. Es entender <strong>qué está pasando en tu cuerpo</strong>, diseñar un plan que se adapte a tu estilo de vida, y acompañarte en el proceso para que los cambios duren.</p>
+        <div class="about__values">
+          <div class="value-item">
+            <div class="value-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div><strong>Enfoque clínico</strong><p>Analíticas, historial médico y causa raíz</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div><strong>Sin juicios</strong><p>Empatía real, no perfeccionismo</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div><strong>Resultados sostenibles</strong><p>Hábitos que duran toda la vida</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <span class="section-label">Cómo te ayudo</span>
+      <h2>Tu solución no es otra dieta.<br>Es un plan hecho para ti.</h2>
+      <p class="section-sub">Tres formas de trabajar juntas, según lo que tu vida necesita ahora mismo.</p>
+      <div class="services__grid">
+
+        <div class="service-card service-card--featured">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="service-card__tag">Más popular</span>
+          <h3>Consulta Personalizada</h3>
+          <p>Evaluación clínica completa, análisis de tu composición corporal y un plan nutricional diseñado exactamente para tu estilo de vida, tus horarios y tus metas.</p>
+          <ul class="service-card__list">
+            <li>Evaluación metabólica completa</li>
+            <li>Plan nutricional adaptado a tu rutina</li>
+            <li>Seguimiento y ajustes mensuales</li>
+            <li>Disponible online y presencial</li>
+          </ul>
+          <a href="https://wa.me/18091234567?text=Hola%20Dra.%20Lisnelly%2C%20quiero%20información%20sobre%20la%20consulta%20personalizada" target="_blank" class="btn btn--primary">Agendar ahora</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Reto "Más Allá de la Balanza"</h3>
+          <p>Un programa grupal diseñado para quienes quieren transformar su relación con la comida y su cuerpo, con estructura, comunidad y acompañamiento continuo.</p>
+          <ul class="service-card__list">
+            <li>Programa grupal intensivo</li>
+            <li>Educación nutricional práctica</li>
+            <li>Comunidad de apoyo</li>
+            <li>Herramientas para la vida diaria</li>
+          </ul>
+          <a href="#" class="btn btn--outline">Ver el Reto</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Seguimiento Continuo</h3>
+          <p>Para quienes ya iniciaron su proceso y quieren mantener el impulso. Chequeos periódicos, ajuste de planes y acompañamiento para que no pierdas el hilo.</p>
+          <ul class="service-card__list">
+            <li>Revisiones quincenales o mensuales</li>
+            <li>Ajuste de planes según progreso</li>
+            <li>Soporte entre sesiones</li>
+            <li>Estrategias anti-abandono</li>
+          </ul>
+          <a href="https://wa.me/18091234567?text=Hola%20Dra.%20Lisnelly%2C%20quiero%20información%20sobre%20el%20seguimiento%20continuo" target="_blank" class="btn btn--outline">Más información</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container stats__inner">
+      <div class="stat-item">
+        <strong class="stat-number" data-target="92">0</strong><span class="stat-symbol">%</span>
+        <p>de pacientes mantienen resultados a los 6 meses</p>
+      </div>
+      <div class="stat-item">
+        <strong class="stat-number" data-target="100">0</strong><span class="stat-symbol">+</span>
+        <p>pacientes transformadas con nutrición clínica</p>
+      </div>
+      <div class="stat-item">
+        <strong class="stat-number" data-target="0">0</strong>
+        <p class="stat-zero-text">dietas restrictivas. Solo hábitos reales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASOS DE ÉXITO ===== -->
+  <section class="cases" id="casos">
+    <div class="container">
+      <span class="section-label">Resultados reales</span>
+      <h2>Ellas también dijeron<br><em>"ya intenté todo"</em></h2>
+      <p class="section-sub">Casos reales de mujeres que encontraron su camino con un enfoque clínico y personalizado.</p>
+      <div class="cases__grid">
+
+        <div class="case-card">
+          <div class="case-card__header">
+            <div class="case-card__avatar">M</div>
+            <div>
+              <strong>María, 34 años</strong>
+              <span>Resistencia a la insulina</span>
+            </div>
+          </div>
+          <p>"Llevaba 3 años intentando bajar de peso con dietas de internet. Con la Dra. Lisnelly entendí por primera vez qué le estaba pasando a mi cuerpo. En 4 meses bajé 12 libras y lo que más valoro es que tengo energía para mis hijos."</p>
+          <div class="case-card__result">
+            <span>▸ 12 lbs en 4 meses</span>
+            <span>▸ Sin pasar hambre</span>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-card__header">
+            <div class="case-card__avatar">C</div>
+            <div>
+              <strong>Carmen, 41 años</strong>
+              <span>Prediabetes + SOP</span>
+            </div>
+          </div>
+          <p>"Tengo SOP y nadie me explicaba cómo comer para mi condición. El plan de la Dra. se adaptó a mi trabajo, a mis horarios de mamá y hasta a lo que consigo en el supermercado. Por primera vez siento que puedo mantenerlo."</p>
+          <div class="case-card__result">
+            <span>▸ Glucosa normalizada</span>
+            <span>▸ Más energía diaria</span>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-card__header">
+            <div class="case-card__avatar">V</div>
+            <div>
+              <strong>Valeria, 29 años</strong>
+              <span>Sobrepeso + ansiedad</span>
+            </div>
+          </div>
+          <p>"Comía por ansiedad todo el tiempo y me sentía muy culpable. La Dra. Lisnelly me ayudó a entender mi relación con la comida sin juzgarme. No solo bajé de peso, también cambié cómo me siento conmigo misma."</p>
+          <div class="case-card__result">
+            <span>▸ Relación sana con la comida</span>
+            <span>▸ -8 lbs en 2 meses</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIOS + CTA ===== -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <span class="section-label">Lo que dicen mis pacientes</span>
+      <h2>Resultados que hablan<br>por sí solos</h2>
+      <div class="testimonials__grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"La Dra. Lisnelly es diferente. No me dio una lista de lo que no podía comer. Me ayudó a entender mi cuerpo y ahora sé cómo comer para toda la vida."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-avatar">A</div>
+            <div><strong>Andrea R.</strong><span>Santo Domingo</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"En 3 meses logré lo que no pude en 3 años de dietas por mi cuenta. El seguimiento es lo que hace la diferencia — sientes que no estás sola en el proceso."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-avatar">L</div>
+            <div><strong>Laura M.</strong><span>Santiago</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Lo mejor es que el plan se adaptó a mi vida, no al revés. Soy madre, trabajo todo el día, y aun así pude seguirlo. Ya van 6 meses y no he vuelto al peso anterior."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-avatar">P</div>
+            <div><strong>Patricia G.</strong><span>La Romana</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Tenía hipotiroidismo y siempre me decían que era 'normal' no bajar. La Dra. encontró la causa y me dio un plan específico. Por fin veo resultados reales."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-avatar">R</div>
+            <div><strong>Rosa T.</strong><span>Santo Domingo Este</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA PERSUASIVO -->
+      <div class="testimonials__cta-box">
+        <h3>¿Lista para ser el próximo caso de éxito?</h3>
+        <p>No tienes que seguir intentándolo sola. Da el primer paso hoy — sin compromiso, solo una conversación.</p>
+        <a href="https://wa.me/18091234567?text=Hola%20Dra.%20Lisnelly%2C%20quiero%20empezar%20mi%20proceso%20contigo" target="_blank" class="btn btn--accent btn--lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quiero empezar ahora
+        </a>
+        <p class="testimonials__cta-note">Te respondo en menos de 24 horas · Sin costo ni compromiso</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA IG ===== -->
+  <section class="instagram" id="instagram">
+    <div class="container">
+      <span class="section-label">Sígueme en Instagram</span>
+      <h2>Nutrición en tu día a día</h2>
+      <p class="section-sub">Tips, recetas y casos reales que te ayudan a entender tu cuerpo.</p>
+      <div class="instagram__grid">
+        <div class="ig-placeholder"><span>📸</span></div>
+        <div class="ig-placeholder"><span>🥗</span></div>
+        <div class="ig-placeholder"><span>💚</span></div>
+        <div class="ig-placeholder"><span>🏥</span></div>
+        <div class="ig-placeholder"><span>🌿</span></div>
+        <div class="ig-placeholder"><span>✨</span></div>
+      </div>
+      <a href="https://instagram.com/" target="_blank" class="btn btn--outline ig-follow-btn">Ver perfil en Instagram</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contact" id="contacto">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <span class="section-label">Contacto</span>
+        <h2>¿Lista para dar el primer paso?</h2>
+        <p>Estoy aquí para escucharte. Escríbeme por WhatsApp o correo y conversamos sin compromiso.</p>
+        <div class="contact__methods">
+          <a href="https://wa.me/18091234567" target="_blank" class="contact-method">
+            <div class="contact-method__icon contact-method__icon--green">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>+1 (809) 123-4567</span>
+            </div>
+          </a>
+          <a href="mailto:dra@lisnellyestevez.com" class="contact-method">
+            <div class="contact-method__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Correo</strong>
+              <span>dra@lisnellyestevez.com</span>
+            </div>
+          </a>
+          <div class="contact-method">
+            <div class="contact-method__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Horarios</strong>
+              <span>Lun–Vie · 8am–6pm (AST)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__socials">
+        <h3>Sígueme en redes</h3>
+        <div class="social-links">
+          <a href="https://instagram.com/" target="_blank" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="https://tiktok.com/" target="_blank" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.79 1.53V6.75a4.85 4.85 0 01-1.02-.06z"/></svg>
+            TikTok
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/img/logo-icon.png" alt="Dra. Lisnelly Estévez" class="footer__logo" />
+        <p>Nutrición Clínica Personalizada<br>República Dominicana</p>
+      </div>
+      <div class="footer__links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer__copy">
+        <p>© 2025 Dra. Lisnelly Estévez · Todos los derechos reservados</p>
+        <p>lisnellyestevez.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
