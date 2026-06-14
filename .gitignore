@@ -1,7 +1,6 @@
 # Server-generated files
 error_log
 *.log
-.htaccess
 
 # OS files
 .DS_Store
