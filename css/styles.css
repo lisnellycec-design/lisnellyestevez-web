@@ -516,6 +516,9 @@ h3 { font-size: 1.3rem; }
   background: var(--white);
   color: var(--black);
   border-color: var(--green-primary);
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: var(--shadow-md);
 }
 
 .service-card__icon {
