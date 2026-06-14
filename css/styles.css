@@ -564,6 +564,7 @@ h3 { font-size: 1.3rem; }
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: auto;
 }
 
 .service-card__list li {
