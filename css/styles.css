@@ -216,7 +216,7 @@ h3 { font-size: 1.3rem; }
    HERO
    =========================== */
 .hero {
-  padding-top: 112px;
+  padding-top: 88px;
   padding-bottom: 0;
   background: var(--white);
   position: relative;
@@ -242,7 +242,7 @@ h3 { font-size: 1.3rem; }
   z-index: 1;
 }
 
-.hero__text { padding-right: 24px; padding-bottom: 80px; padding-top: 20px; }
+.hero__text { padding-right: 24px; padding-bottom: 40px; padding-top: 16px; }
 
 .hero__sub {
   font-size: 1.1rem;
