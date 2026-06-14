@@ -307,12 +307,15 @@ h3 { font-size: 1.3rem; }
   align-items: center;
   gap: 8px;
   justify-content: center;
-  margin-top: 48px;
   color: var(--gray);
   font-size: 0.85rem;
   animation: bounce 2s infinite;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  white-space: nowrap;
 }
 
 @keyframes bounce {
