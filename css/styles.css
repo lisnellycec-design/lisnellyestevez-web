@@ -250,6 +250,10 @@ h3 { font-size: 1.3rem; }
   justify-content: center;
 }
 
+.hero h1 {
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+}
+
 .hero__sub {
   font-size: 1.1rem;
   color: var(--gray);
