@@ -503,7 +503,7 @@ h3 { font-size: 1.3rem; }
 
 .service-card__header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
