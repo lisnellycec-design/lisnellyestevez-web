@@ -217,7 +217,7 @@ h3 { font-size: 1.3rem; }
    =========================== */
 .hero {
   padding-top: 112px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
   background: var(--white);
   position: relative;
   overflow: hidden;
@@ -237,12 +237,12 @@ h3 { font-size: 1.3rem; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: center;
+  align-items: stretch;
   position: relative;
   z-index: 1;
 }
 
-.hero__text { padding-right: 24px; }
+.hero__text { padding-right: 24px; padding-bottom: 80px; padding-top: 20px; }
 
 .hero__sub {
   font-size: 1.1rem;
@@ -298,9 +298,12 @@ h3 { font-size: 1.3rem; }
 .hero__image img {
   position: relative;
   z-index: 1;
-  max-height: 540px;
-  width: auto;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
   object-fit: contain;
+  object-position: bottom;
+  display: block;
   filter: drop-shadow(0 20px 40px rgba(43,88,64,0.15));
 }
 
