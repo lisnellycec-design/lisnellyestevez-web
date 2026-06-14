@@ -833,26 +833,98 @@ h3 { font-size: 1.3rem; }
 .instagram .container > h2 { margin-bottom: 8px; }
 .instagram .section-sub { margin: 0 auto 40px; }
 
-.instagram__grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 8px;
-  margin-bottom: 32px;
+.ig-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 40px;
 }
 
-.ig-placeholder {
-  aspect-ratio: 1;
+.ig-carousel {
+  overflow: hidden;
+  flex: 1;
+}
+
+.ig-track {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: grab;
+  user-select: none;
+}
+
+.ig-track.dragging {
+  transition: none;
+  cursor: grabbing;
+}
+
+.ig-card {
+  flex: 0 0 calc((100% - 32px) / 3);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 4 / 5;
+  display: block;
   background: var(--green-xlight);
-  border-radius: var(--radius-sm);
+}
+
+.ig-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  pointer-events: none;
+}
+
+.ig-card:hover img { transform: scale(1.05); }
+
+.ig-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: transform var(--transition);
-  border: 1px solid var(--green-light);
+  transition: background 0.3s;
 }
-.ig-placeholder:hover { transform: scale(1.04); }
+
+.ig-card:hover .ig-card__overlay { background: rgba(0,0,0,0.25); }
+
+.ig-card__overlay svg {
+  opacity: 0;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  transition: opacity 0.3s;
+}
+
+.ig-card:hover .ig-card__overlay svg { opacity: 1; }
+
+.ig-arrow {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid var(--green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--green-dark);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+
+.ig-arrow:hover {
+  background: var(--green-dark);
+  color: var(--white);
+  border-color: var(--green-dark);
+}
+
+.ig-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
 
 .ig-follow-btn { margin: 0 auto; }
 
