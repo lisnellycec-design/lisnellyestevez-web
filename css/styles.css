@@ -501,6 +501,12 @@ h3 { font-size: 1.3rem; }
   position: relative;
 }
 
+.service-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
@@ -529,9 +535,6 @@ h3 { font-size: 1.3rem; }
 }
 
 .service-card__tag {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   background: var(--accent-gold);
   color: var(--black);
   font-size: 0.72rem;
@@ -539,6 +542,7 @@ h3 { font-size: 1.3rem; }
   padding: 4px 12px;
   border-radius: var(--radius-full);
   letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 
 .service-card h3 {
