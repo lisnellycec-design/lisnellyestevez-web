@@ -1032,12 +1032,14 @@ h3 { font-size: 1.3rem; }
   .navbar__hamburger { display: flex; }
 
   .hero::before { display: none; }
-  .hero__inner { grid-template-columns: 1fr; text-align: center; }
-  .hero__image { order: -1; justify-content: center; }
-  .hero__image img { max-height: 320px; }
+  .hero__inner { grid-template-columns: 1fr; min-height: auto; }
+  .hero__image { order: -1; height: 300px; overflow: hidden; }
+  .hero__image img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+  .hero__text { padding: 32px 24px 48px; text-align: center; }
+  .hero h1 { font-size: clamp(2rem, 8vw, 2.6rem); }
   .hero__ctas { justify-content: center; }
   .hero__trust { justify-content: center; }
-  .hero__text { padding-right: 0; }
+  .hero__scroll-hint { position: relative; bottom: auto; left: auto; transform: none; margin: 0 0 24px; }
 
   .about__inner { grid-template-columns: 1fr; }
   .about__badge-card { right: 0; }
