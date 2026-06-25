@@ -1,4 +1,57 @@
 /* ===========================
+   MAINTENANCE MODE
+   =========================== */
+.maintenance-overlay {
+  display: none;
+}
+
+body.maintenance .maintenance-overlay {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  backdrop-filter: blur(10px) brightness(0.85);
+  -webkit-backdrop-filter: blur(10px) brightness(0.85);
+  background: rgba(240, 247, 244, 0.6);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.maintenance-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 56px 48px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 24px 64px rgba(43, 88, 64, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.maintenance-logo {
+  height: 64px;
+  width: auto;
+}
+
+.maintenance-card h2 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--green-dark);
+  margin: 0;
+}
+
+.maintenance-card p {
+  font-size: 1rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===========================
    VARIABLES & RESET
    =========================== */
 :root {
